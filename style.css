@@ -66,7 +66,7 @@ header p {
     font-size: 1.2rem;
 }
 
-/* Main */
+/* Main content */
 main {
     max-width: 900px;
     margin: 2rem auto;
@@ -94,7 +94,17 @@ section::before {
     position: absolute;
     top: 1rem;
     right: 1.5rem;
-    opacity: 0.1;
+    opacity: 0.3; /* Iets duidelijker zichtbaar */
+}
+
+/* Stem sectie lijst */
+section ol {
+    padding-left: 1.2rem;
+    margin-top: 1rem;
+}
+
+section ol li {
+    margin-bottom: 0.8rem;
 }
 
 /* Footer */
@@ -107,12 +117,13 @@ footer {
     font-size: 0.9rem;
 }
 
-/* Responsief */
+/* Responsief design */
 @media (max-width: 768px) {
     nav ul {
         flex-direction: column;
         gap: 0.5rem;
     }
+
     header h1 {
         font-size: 2rem;
     }
